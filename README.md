@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# [my-project-hydraulic]
 
-## Getting Started
+[One or two sentences: Resolving inventory shortages and tracking outstanding debts.]
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js
+- Prisma (ORM)
+- [Database: PostgreSQL]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Branch Naming
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `main` holds stable code only. No direct commits.
+- One branch per task, in lowercase with hyphens:
+  - `feature/<short-description>` (new functionality)
+  - `fix/<short-description>` (bug fixes)
+  - `chore/<short-description>` (setup, config, tooling)
+  - `docs/<short-description>` (documentation only)
+- Examples: `feature/add-product-model`, `fix/migration-error`, `chore/setup-prisma`
 
-## Learn More
+### Pull Request Rules
 
-To learn more about Next.js, take a look at the following resources:
+- Every change reaches `main` through a PR. No direct pushes.
+- PR title is clear; the description says what changed and why.
+- Keep PRs small and focused on a single task.
+- Link the related board card in the description.
+- At least one approval is required before merging.
+- No merge conflicts, no failing build.
+- Never commit secrets, `.env` files, or credentials.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Definition of Done
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A task is done only when all of these are true:
 
-## Deploy on Vercel
+-  The code works and was tested manually (or by automated tests).
+-  The build passes with no errors or warnings in the console.
+-  code is formatted and follows the project style.
+-  A PR was opened, reviewed, and approved.
+-  Docs or README were updated if the change affects them.
+-  The card on the project board was moved to **Done**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Never commit `.env`. It is listed in `.gitignore`.
+- Keep `.env.example` updated with variable names only (no real values).
+
+## Project Board
+
+[Link to the project board]
