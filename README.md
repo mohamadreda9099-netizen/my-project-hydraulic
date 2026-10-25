@@ -47,4 +47,4 @@ A task is done only when all of these are true:
 
 ## Project Board
 
-[Link to the project board]
+[Link to the project board] (https://github.com/users/mohamadreda9099-netizen/projects/1)
