@@ -45,6 +45,15 @@ A task is done only when all of these are true:
 - Never commit `.env`. It is listed in `.gitignore`.
 - Keep `.env.example` updated with variable names only (no real values).
 
+## Bootstrap Week Checklist
+
+- [ ] Mon: Watch the Prisma environment lessons. Initialize the Next.js project.
+- [ ] Tue: Repo conventions: branch naming, PR rules and a written definition of done go into the README. Set up the project board and load it with the backlog from Discovery. Attend System Design Session.
+- [ ] Wed: Initialize Prisma. Translate the approved ERD into `schema.prisma`. Run the first migration.
+- [ ] Thu: Write seed data. Verify queries against the seeded database.
+- [ ] Fri: Environment variables and secrets hygiene. Submit repo link + board link to Discord. Attend Marwa's session.
+- [ ] Sat: Catch-up only.
+
 ## Project Board
 
 [Project board](https://github.com/users/mohamadreda9099-netizen/projects/1)
