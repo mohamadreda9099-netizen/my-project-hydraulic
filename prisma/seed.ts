@@ -55,7 +55,7 @@ async function main() {
           create: {
             name: "Demo Manager",
             email: demoUserEmail,
-            password: "demo-password-not-for-login",
+            passwordHash: "demo-hash-not-for-login",
           },
         }),
         tx.user.upsert({
@@ -64,7 +64,7 @@ async function main() {
           create: {
             name: "Demo Cashier",
             email: "demo.cashier@hydraulic.example",
-            password: "demo-password-not-for-login",
+            passwordHash: "demo-hash-not-for-login",
           },
         }),
         tx.supplier.upsert({
